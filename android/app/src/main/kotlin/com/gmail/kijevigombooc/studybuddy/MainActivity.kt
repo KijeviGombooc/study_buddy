@@ -1,4 +1,4 @@
-package com.gmail.kijevigombooc.study_buddy
+package com.gmail.kijevigombooc.studybuddy
 
 import io.flutter.embedding.android.FlutterActivity
 
