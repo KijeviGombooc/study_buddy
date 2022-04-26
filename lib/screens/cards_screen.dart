@@ -37,6 +37,7 @@ class _CardsScreenState extends State<CardsScreen> {
     DBHelper.getCardsOfTopic(widget.topic.id).then((cards) {
       setState(() {
         _allCards = cards;
+        _allCards!.shuffle();
         if (Settings.studyType == StudyType.normal) {
           _deck = Deck(allCards: List.from(_allCards!));
         } else {
