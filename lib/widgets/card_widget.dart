@@ -16,7 +16,9 @@ class CardWidget extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Center(child: child),
+        child: Center(
+          child: SingleChildScrollView(child: child),
+        ),
       ),
     );
   }
